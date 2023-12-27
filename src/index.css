@@ -1,6 +1,7 @@
 :root {
-  --highligh-color: 249, 175, 122;
-  --light-background-color: 28, 28, 28;
+  --highlight-color: 249, 175, 122;
+  --gray-text-color: 166, 166, 166;
+  --light-background-color: 246, 246, 246;
   --dark-background-color: 217, 217, 217;
 }
 

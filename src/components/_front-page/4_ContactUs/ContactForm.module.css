@@ -1,0 +1,13 @@
+.wrapper {
+  width: calc(40% - 2rem);
+  padding: 1rem;
+}
+
+.label {
+}
+
+.input {
+  background-color: rgb(var(--dark-background-color));
+  width: 100%;
+  line-height: 2rem;
+}

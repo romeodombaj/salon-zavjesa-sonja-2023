@@ -10,8 +10,11 @@ const FrontPage = () => {
     <div className={styles.wrapper}>
       <Head />
       <Services />
+      <div className={styles.divider} />
       <AboutUs />
+      <div className={styles.divider} />
       <Location />
+      <div className={styles.divider} />
       <ContactUs />
     </div>
   );
