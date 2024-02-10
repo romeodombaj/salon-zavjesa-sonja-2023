@@ -1,0 +1,36 @@
+.image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10em);
+}
+
+.load-animation {
+  animation: slide-in 1.5s forwards;
+}
+
+.image {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  transition: 0.3s;
+  scale: 1.1;
+  filter: contrast(115%) brightness(100%);
+}
+
+.image-wrapper:hover .image {
+  scale: 1.05;
+  filter: contrast(100%) brightness(115%);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(25rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

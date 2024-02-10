@@ -10,7 +10,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<FrontPage />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/:portfolioName" element={<Portfolio />} />
+        <Route path="*" element={<FrontPage />} />
       </Routes>
     </div>
   );

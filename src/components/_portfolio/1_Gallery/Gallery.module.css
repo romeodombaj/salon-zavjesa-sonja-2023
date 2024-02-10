@@ -1,0 +1,50 @@
+.wrapper {
+  width: 100%;
+  background-color: rgb(var(--light-background-color));
+  margin-top: 4rem;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  transform: translateY(40rem);
+  animation: slide-up 1s forwards;
+}
+
+.column1 {
+  animation-delay: 0.2s;
+}
+
+.column2 {
+  animation-delay: 0;
+}
+
+.column3 {
+  animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(40rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

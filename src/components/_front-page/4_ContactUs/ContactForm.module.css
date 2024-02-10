@@ -1,5 +1,5 @@
 .wrapper {
-  width: calc(40% - 2rem);
+  width: calc(50% - 2rem);
   padding: 1rem;
 }
 
@@ -9,5 +9,5 @@
 .input {
   background-color: rgb(var(--dark-background-color));
   width: 100%;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
