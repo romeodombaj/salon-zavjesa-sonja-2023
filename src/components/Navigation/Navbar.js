@@ -10,7 +10,18 @@ const Navbar = () => {
 
   const onNavigate = (e) => {
     const value = e.currentTarget.getAttribute("value");
-    navigate("/" + value);
+    if ("#/" + value !== window.location.hash) {
+      navigate("/" + value);
+      scrollToTop("instant");
+    }
+    scrollToTop("smooth");
+  };
+
+  const scrollToTop = (behavior) => {
+    window.scrollTo({
+      top: 0,
+      behavior: behavior,
+    });
   };
 
   useEffect(() => {
